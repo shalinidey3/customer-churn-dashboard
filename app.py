@@ -11,9 +11,7 @@ st.set_page_config(
 # -----------------------------
 # Load Customer Churn Dataset
 # -----------------------------
-DATA_URL = "https://raw.githubusercontent.com/shalinidey3/Customer-Churn-Analysis/main/customer_churn_dataset-training-master.csv"
-
-train = pd.read_csv(DATA_URL)
+train = pd.read_csv("customer_churn_dataset-training-master.csv")
 
 # Remove missing values
 train_clean = train.dropna().copy()
